@@ -19,11 +19,17 @@ const Container = styled.div`
 
 
 export default class Home extends React.Component{
+    state = {
+        estado:'sale'
+    }
+    componentDidMount(){
+        this.setState({estado:'entra'})
+    }
     render(){
         return (
             <Container>
                 <Header/>
-                <Hero/>
+                <Hero estado={this.state.estado}/>
                 <Footer/>
             </Container>
         )
