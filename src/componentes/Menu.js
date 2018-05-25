@@ -65,11 +65,12 @@ const Submenu = styled(posed.ul({
     }
 }))`
         position:absolute;
-        top:100px;
-        background:#BDBDBD;
+        top:110px;
+        background:#f03a83;
         left:-3px;
         padding:2em;
         list-style:none;
+        border-radius:10px;
 
 
 `
@@ -77,6 +78,14 @@ const Submenu = styled(posed.ul({
 const SubItem = styled(posed.li(subItemConfig))`
     margin:12px;
     font-size:20px;
+    a{
+        text-decoration:none;
+        color:white;
+        transition:all 0.2s linear;
+    }
+    a:hover{
+        color:#feed3d;
+    }
 
 
 `
@@ -94,8 +103,13 @@ const UL = styled(posed.ul(sidebarConfig)) `
         display:inline-block;
         background:#f03a83;
         color:white;
-        padding:30px;;
+        padding:30px;
+        transition:all ease-in-out 0.2s;
         
+    }
+    >li:hover{
+        background:#feed3d;
+        color:black;
     }
    
 
@@ -120,7 +134,8 @@ const Item = styled(posed.li(itemConfig)) `
 export default class Menu extends React.Component {
     state = {
         menu:'closed',
-        submenu:'notvisible'
+        submenu:'notvisible',
+        submenu2:'notvisible'
     }
     componentDidMount(){
         this.setState({
@@ -140,7 +155,18 @@ export default class Menu extends React.Component {
                         <SubItem><Link to="#">Catalogo</Link></SubItem>
                     </Submenu>
                 </Item>
-                <Item>Manualidades y Creatividad</Item>
+                <Item
+                onMouseEnter={()=>this.setState({submenu2:'visible'})}
+                onMouseLeave={()=>this.setState({submenu2:'notvisible'})}
+                >
+                    Manualidades y Creatividad
+                    <Submenu pose={this.state.submenu2}>
+                        <SubItem><Link to="#">Fiestas</Link></SubItem>
+                        <SubItem><Link to="#">Accesorios</Link></SubItem>
+                        <SubItem><Link to="#">Recordatorios</Link></SubItem>
+                        <SubItem><Link to="#">Pintura</Link></SubItem>
+                    </Submenu>
+                    </Item>
             </UL>
         )
     }

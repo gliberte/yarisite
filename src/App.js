@@ -1,11 +1,16 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import 'font-awesome/css/font-awesome.css'
 import styled from 'styled-components'
 import posed from 'react-pose'
 import {BrowserRouter as Router,Route} from 'react-router-dom'
-
+import {injectGlobal} from 'styled-components'
 import Home from './pantallas/Home'
+
+injectGlobal`
+@import url('https://fonts.googleapis.com/css?family=Courgette');
+`
+
+
 
 class App extends Component {
   render() {
