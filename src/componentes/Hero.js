@@ -12,17 +12,17 @@ const Container = styled.div`
     background-position:center;
 `
 const Titulo = styled(posed.h1({
-    entra:{
-        x:0,
-        scaleY:1,
-        opacity:1
+    entra: {
+        x: 0,
+        scaleY: 1,
+        opacity: 1
     },
-    sale:{
-        x:-200,
-        scaleY:0,
-        opacity:0
+    sale: {
+        x: -200,
+        scaleY: 0,
+        opacity: 0
     }
-}))`
+})) `
     text-align:center;
     color:#009dde;
     font-size:5em;
@@ -39,12 +39,12 @@ margin-top:1em;
 font-style:italic;
 font-size:20px;
 `
-export default ({estado})=>{
+export default ({ estado }) => {
     return (
         <Container>
-        <SocialIcons/>
-        <Titulo pose={estado}>Hola... soy Yarisbel</Titulo>
-        <Subtitulo>Lic. en Diseño Gráfico</Subtitulo>
+            <SocialIcons />
+            <Titulo pose={estado}>Hola... soy Yarisbel</Titulo>
+            <Subtitulo>Lic. en Diseño Gráfico</Subtitulo>
 
         </Container>
     )

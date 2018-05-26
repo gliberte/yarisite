@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import {Link} from 'react-router-dom'
 import Menu from './Menu'
 const ContainerHeader = styled.div`
     grid-area:header;
@@ -23,7 +24,7 @@ const Logo = styled.div`
 export default ()=>{
     return (
         <ContainerHeader>
-            <Logo><span>Logo</span></Logo>
+            <Logo><span><Link to="/">Logo</Link></span></Logo>
             <Menu/>
         </ContainerHeader>
     )

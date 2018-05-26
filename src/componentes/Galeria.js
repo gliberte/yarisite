@@ -94,7 +94,7 @@ export default class Galeria extends React.Component {
         arte:null
     }
     componentDidMount() {
-        const digits = Array.from({ length: 40 }, () => {
+        const digits = Array.from({ length: this.props.recuadros }, () => {
             return [randomNumber(4), randomNumber(4)].concat(
                 [1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],
                 [1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],
@@ -120,7 +120,7 @@ export default class Galeria extends React.Component {
                 <MainContent>
                     {this.state.digits.map((digit) => {
                         const [h, v] = [digit[0], digit[1]]
-                        const arte = require(`../img/${this.props.origen}/${randomNumber(27)}.jpg`)
+                        const arte = require(`../img/${this.props.origen}/${randomNumber(this.props.numimagenes)}.jpg`)
                         return (
                             <Imagenes digits={{h,v}}>
                                 <img src={arte} alt=""/>

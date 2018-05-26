@@ -161,7 +161,7 @@ export default class Menu extends React.Component {
                 >
                     Manualidades y Creatividad
                     <Submenu pose={this.state.submenu2}>
-                        <SubItem><Link to="#">Fiestas</Link></SubItem>
+                        <SubItem><Link to="/fiestas">Fiestas</Link></SubItem>
                         <SubItem><Link to="#">Accesorios</Link></SubItem>
                         <SubItem><Link to="#">Recordatorios</Link></SubItem>
                         <SubItem><Link to="#">Pintura</Link></SubItem>

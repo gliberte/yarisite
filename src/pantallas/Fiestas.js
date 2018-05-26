@@ -9,17 +9,18 @@ import fondo_galeria from '../img/fondo_galeria.jpg';
 const Container = styled.div`
     background:#607D8B;
     grid-area:body;
+    
 `
 
 
-export default class Artes extends React.Component{
+export default class Fiestas extends React.Component{
     render(){
         return (
             <Container>
                 <Hero url={arte_fondo}>
-                    <p>Artes</p>
+                    <p>Fiestas</p>
                 </Hero>
-                <Galeria origen="artes" recuadros={40} numimagenes={27}/>
+                <Galeria origen="fiestas" recuadros={50} numimagenes={59}/>
             </Container>
         )
     }
