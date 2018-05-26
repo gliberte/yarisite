@@ -35,6 +35,10 @@ const Close = styled.button`
 
 const MainContent = styled.section`
     display:grid;
+    width:90%;
+    margin:10px auto;
+    background:rgba(0,0,0,0.7);
+    border:4px solid #ac2e66; 
     grid-template-columns:repeat(auto-fill,100px);
     grid-auto-rows:100px;
     grid-auto-flow:dense;

@@ -4,9 +4,10 @@ import posed from 'react-pose'
 import arte_fondo from '../img/arte.jpg'
 import Hero from '../componentes/HeroGalery'
 import Galeria from '../componentes/Galeria'
+import fondo_galeria from '../img/fondo_galeria.jpg';
 
 const Container = styled.div`
-
+    background:#607D8B;
 `
 
 
