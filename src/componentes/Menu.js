@@ -151,7 +151,7 @@ export default class Menu extends React.Component {
                 >
                     Artes Gráficas
                     <Submenu pose={this.state.submenu}>
-                        <SubItem><Link to="#">Artes</Link></SubItem>
+                        <SubItem><Link to="/artes">Artes</Link></SubItem>
                         <SubItem><Link to="#">Catalogo</Link></SubItem>
                     </Submenu>
                 </Item>
