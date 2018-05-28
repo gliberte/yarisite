@@ -8,7 +8,7 @@ import fondo_galeria from '../img/fondo_galeria.jpg';
 
 
 const Container = styled(posed.div({
-    initialPose:'exit',
+    initialPose: 'exit',
     enter: {
         opacity: 1
     },
@@ -32,7 +32,6 @@ export default class Fiestas extends React.Component {
                 </Hero>
                 <Galeria origen="fiestas" recuadros={50} numimagenes={59} />
             </Container>
-
 
         )
     }
