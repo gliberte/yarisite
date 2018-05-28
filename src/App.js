@@ -16,6 +16,7 @@ import Recordatorios from '../src/pantallas/Recordatorios'
 injectGlobal`
 @import url('https://fonts.googleapis.com/css?family=Courgette');
 @import url('https://fonts.googleapis.com/css?family=Luckiest+Guy');
+@import url('https://fonts.googleapis.com/css?family=Amaranth|Sacramento');
 body{
   margin:0;
 }
