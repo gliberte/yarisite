@@ -31,6 +31,10 @@ const Close = styled.button`
     background:none;
     color:black;
     border:0;
+    &:hover{
+        cursor:pointer;
+    }
+
 `
 
 const MainContent = styled.section`
@@ -82,10 +86,12 @@ const ItemOverlay = styled.div`
         text-transform:uppercase;
         background:rgba(0,0,0,0.7);
         padding:5px;
+        &:hover{
+            cursor:pointer;
+        }
         
     }
     
-
 `
 
 export default class Galeria extends React.Component {
@@ -118,11 +124,11 @@ export default class Galeria extends React.Component {
                     </OverlayInner>
                 </Overlay>
                 <MainContent>
-                    {this.state.digits.map((digit) => {
+                    {this.state.digits.map((digit,i) => {
                         const [h, v] = [digit[0], digit[1]]
                         const arte = require(`../img/${this.props.origen}/${randomNumber(this.props.numimagenes)}.jpg`)
                         return (
-                            <Imagenes digits={{h,v}}>
+                            <Imagenes key={i} digits={{h,v}}>
                                 <img src={arte} alt=""/>
                                 <ItemOverlay>
                                     <button onClick={()=>this.setState({arte})}>Ver -></button>

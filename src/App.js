@@ -8,7 +8,9 @@ import Home from './pantallas/Home'
 import Header from './componentes/Header'
 import Artes from './pantallas/Artes'
 import Fiestas from './pantallas/Fiestas'
+import Accesorios from './pantallas/Accesorios'
 import Footer from '../src/componentes/Footer'
+import Recordatorios from '../src/pantallas/Recordatorios'
 
 
 injectGlobal`
@@ -38,8 +40,10 @@ class App extends Component {
         <Container>
           <Header/>
           <Route exact path="/" component={Home} />
-          <Route exact path="/artes" component={Artes} />
-          <Route path="/fiestas" component={Fiestas}/>
+          <Route path="/galeria/fiestas" component={Fiestas}/>
+          <Route path="/galeria/artes" component={Artes}/>
+          <Route path="/galeria/accesorios" component={Accesorios}/>
+          <Route path="/galeria/recordatorios" component={Recordatorios}/>
           <Footer/>
         </Container>
 

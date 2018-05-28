@@ -151,7 +151,7 @@ export default class Menu extends React.Component {
                 >
                     Artes Gráficas
                     <Submenu pose={this.state.submenu}>
-                        <SubItem><Link to="/artes">Artes</Link></SubItem>
+                        <SubItem><Link to="/galeria/artes">Artes</Link></SubItem>
                         <SubItem><Link to="#">Catalogo</Link></SubItem>
                     </Submenu>
                 </Item>
@@ -161,10 +161,11 @@ export default class Menu extends React.Component {
                 >
                     Manualidades y Creatividad
                     <Submenu pose={this.state.submenu2}>
-                        <SubItem><Link to="/fiestas">Fiestas</Link></SubItem>
-                        <SubItem><Link to="#">Accesorios</Link></SubItem>
-                        <SubItem><Link to="#">Recordatorios</Link></SubItem>
+                        <SubItem><Link to="/galeria/fiestas">Fiestas</Link></SubItem>
+                        <SubItem><Link to="/galeria/accesorios">Accesorios</Link></SubItem>
+                        <SubItem><Link to="/galeria/recordatorios">Recordatorios</Link></SubItem>
                         <SubItem><Link to="#">Pintura</Link></SubItem>
+                        
                     </Submenu>
                     </Item>
             </UL>
