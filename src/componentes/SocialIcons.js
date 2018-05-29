@@ -26,6 +26,6 @@ export default ({estado})=>(
     <Container>
         <BotonSocial href="https://www.facebook.com/mycristdesign" target="_blank"><i className="fa fa-facebook fa-2x"></i></BotonSocial>
         <BotonSocial href="https://www.instagram.com/mycristdesign/" target="_blank"><i className="fa fa-instagram fa-2x"></i></BotonSocial>
-        <BotonSocial href="https://www.linkedin.com/in/luis-solano-07296657/" target="_blank"><i className="fa fa-linkedin fa-2x"></i></BotonSocial>
+        <BotonSocial href="https://www.linkedin.com/in/yarisbel-cerrud-b78873146/" target="_blank"><i className="fa fa-linkedin fa-2x"></i></BotonSocial>
     </Container>
 )

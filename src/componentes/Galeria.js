@@ -73,7 +73,6 @@ const Imagenes = styled.div`
         transform:translateY(0);
     }
     
-
 `
 const ItemOverlay = styled.div`
     background:#ffc60032;
